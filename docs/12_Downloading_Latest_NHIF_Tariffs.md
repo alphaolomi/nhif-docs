@@ -51,8 +51,8 @@ The information provided in the JSON Document contains the following important f
 |FieldName | Description| Data Type|
 | -- | -- | -- |
 |ItemCode |A unique code for each service issued by NHIF. |Text|
-|ItemName Service Name |Text|
-|PackageID ID of the price package. NHIF maintain different packages |Integer|
+|ItemName |Service Name |Text|
+|PackageID |ID of the price package. NHIF maintain different packages |Integer|
 |UnitPrice| Price for a single unit of Item or Service |Decimal (18,2)|
 |IsRestricted | A flag showing whether the service has restriction or not. If a service has restriction the beneficiary must get approval from NHIF before he/she can access that service. |Boolean|
 

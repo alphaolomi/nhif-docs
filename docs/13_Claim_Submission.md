@@ -34,7 +34,7 @@ follows:
 |DateDischarged |If patient was admitted then the discharge date otherwise `null` |Date| 08/03/|
 |PractitionerNo |The Registration number of the medical practioner attending the patient as registered by the Medical council of Tanganyika |Text |2999999|
 |CreatedBy| User who Created the Entry in the HMIS| |Text| ghaule
-|DateCreated The Date the entry was created |Date| 07/03/|
+|DateCreated |The Date the entry was created |Date| 07/03/|
 
 <br>
 
@@ -43,8 +43,8 @@ follows:
 
 |FieldName | Description| Data Type| Example|
 | -- | --  | -- | -- |
-|FolioDiseaseID Primary Key for a folio of visit |GUID| e9429e1c-f892-40ae-8c0a-a3bc0095681f|
-|FolioID The ID of the folio associated to this diese |GUIN | 817d6e75-3bef-4d25-a2e1-a3bc009530ab|
+|FolioDiseaseID| Primary Key for a folio of visit |GUID| e9429e1c-f892-40ae-8c0a-a3bc0095681f|
+|FolioID| The ID of the folio associated to this diese |GUIN | 817d6e75-3bef-4d25-a2e1-a3bc009530ab|
 |DiseaseCode | Disease code as identified by WHO(Currently ICD 9) |Text|084|
 |CreatedBy| User who Created the Entry in the HMIS| |Text |ghaule|
 |DateCreated |The Date the entry was created |Date| 07/03/|

@@ -1,0 +1,15 @@
+site_name: NHIF API Documentation
+
+nav:
+  - Home: index.md
+  - 'User Guide':
+    - Introduction: 10_introduction.md
+    - NHIF member verification: 11_NHIF_Member_Verification.md
+    - Downloading latest nhif tariffs: 12_Downloading_Latest_NHIF_Tariffs.md
+    - Claim submission: 13_Claim_Submission.md
+    - Referring patients: 14_Referring_Patients.md
+    - Verification of preapproved services: 15_Verification_of_Preapproved_Services.md
+  - About: about.md
+
+
+theme: lumen
