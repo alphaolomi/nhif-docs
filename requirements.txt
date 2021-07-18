@@ -6,7 +6,7 @@ livereload==2.6.3
 lunr==0.5.8
 Markdown==3.3.4
 MarkupSafe==2.0.1
-mkdocs==1.2.1
+mkdocs==1.2.2
 mkdocs-bootswatch==1.1
 nltk==3.6.2
 PyYAML==5.4.1
