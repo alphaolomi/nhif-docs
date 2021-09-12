@@ -63,7 +63,7 @@ A Response returned from the API
 
 ```
 
-<br>
+
 
 
 All the endpoints use `POST` Method. 
@@ -71,7 +71,7 @@ All the endpoints use `POST` Method.
 
 The following are possible values of `PhysicianQualificationID` and `FacilityCode`.
 
-<br>
+
 
 |ID| Qualification|
 |--|--|
@@ -83,7 +83,7 @@ The following are possible values of `PhysicianQualificationID` and `FacilityCod
 |6 | Assistant Clinical Officer|
 |7 | Others|
 
-<br>
+
 
 |Facility Code |Facility Name|
 |--|--|
@@ -96,7 +96,7 @@ The following are possible values of `PhysicianQualificationID` and `FacilityCod
 |01334 |  Kibong'oto Special Hospital|
 |00947 |  Mirembe Mental Health Hospital|
 
-<br>
 
-NB. Just contact NHIF to get to know your FacilityCode
 
+!!! hint
+    Just contact NHIF to get to know your `FacilityCode`
