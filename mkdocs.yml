@@ -1,15 +1,77 @@
 site_name: NHIF API Documentation
+site_url: https://nhif-docs.netlify.app/
+site_author: Alpha Olomi
+site_description: >-
+  National HHealth Issuance Fund Documentation for Developers
+
+# Repository
+repo_name: alphaolomi/nhif-docs/
+repo_url: https://github.com/alphaolomi/nhif-docs/
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2021 Alpha Olomi
 
 nav:
   - Home: index.md
   - 'User Guide':
     - Introduction: 10_introduction.md
-    - NHIF member verification: 11_NHIF_Member_Verification.md
-    - Downloading latest nhif tariffs: 12_Downloading_Latest_NHIF_Tariffs.md
-    - Claim submission: 13_Claim_Submission.md
+    - Version History: 02_version.md
+    - NHIF Member Verification: 11_NHIF_Member_Verification.md
+    - Downloading latest NHIF tariffs: 12_Downloading_Latest_NHIF_Tariffs.md
+    - Claim Submission: 13_Claim_Submission.md
     - Referring patients: 14_Referring_Patients.md
-    - Verification of preapproved services: 15_Verification_of_Preapproved_Services.md
+    - Verification of pre-approved services: 15_Verification_of_Preapproved_Services.md
+  - 'Integrations':
+    - PHP: php.md
+    - Node.js: node.md
   - About: about.md
 
+plugins:
+  - search
+  # - git-revision-date
+  # - git-revision-date-localized:
+      # fallback_to_build_date: true
+      
 
-theme: lumen
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+extra:
+  analytics:
+    provider: google
+    property: G-CYPF6R085W
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alphaolomi
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta

@@ -1,6 +1,6 @@
 # 1.3) Claim Submission
 
-<br>
+
 
 Claim can be submitted online to NHIF by creating a Jason payload. This
 payload can contain one or more folios (At least one folio) and associated
@@ -23,20 +23,20 @@ follows:
 |FirstName| Card holder’s First Name |Text| Amour|
 |LastName| Card holder’s Last Name |Text | Rashid|
 |Gender | Card Holder’s Gender |Text| Male|
-|DateOfBirth| Card Holder’s Date Of Birth |Date| 18/03/|
+|DateOfBirth| Card Holder’s Date Of Birth |Date| 18/03/2020|
 |TelephoneNo| |Text| 0686155255|
 |PatientFileNo| Patient’s File number as recorded by the Hospital or other health facility |Text |MNH/03/99999|
 |PatientFile | A PDF of the patient treatment details serialized as Base 64 string| |Text | GQ8XQAYFAiEMfN0qD0COTgMX......|
 |AuthorizationNo |Authorization number issued during member verification |Text| 187870908768|
-|AttendanceDate |The date that the patient attended for service |Date | 07/03/ |
+|AttendanceDate |The date that the patient attended for service |Date | 07/03/2020 |
 |PatientTypeCode |IN PATIENT or OUTPATIENT| Text |OUT or IN|
-|DateAdmitted| If patient was admitted then the admission date otherwise `null` |Date| 07/03/|
-|DateDischarged |If patient was admitted then the discharge date otherwise `null` |Date| 08/03/|
+|DateAdmitted| If patient was admitted then the admission date otherwise `null` |Date| 07/03/2020|
+|DateDischarged |If patient was admitted then the discharge date otherwise `null` |Date| 08/03/2020|
 |PractitionerNo |The Registration number of the medical practioner attending the patient as registered by the Medical council of Tanganyika |Text |2999999|
-|CreatedBy| User who Created the Entry in the HMIS| |Text| ghaule
-|DateCreated |The Date the entry was created |Date| 07/03/|
+|CreatedBy| User who Created the Entry in the HMIS| Text| ghaule
+|DateCreated |The Date the entry was created |Date| 07/03/2020|
 
-<br>
+
 
 ###  (ii) **FolioDisease**
 
@@ -50,7 +50,7 @@ follows:
 |DateCreated |The Date the entry was created |Date| 07/03/|
 
 
-<br>
+
 
 ###  (iii) **FolioItem**
 
@@ -68,7 +68,7 @@ follows:
 |DateCreated| The Date the entry was created |Date | 07/03/2017|
 
 
-<br>
+
 
 
 
@@ -84,13 +84,13 @@ with NHIF. This will help NHIF Systems to identify and authorize any API
 call before giving it access.
 
 
-<br><br><br>
-
 ###  **SAMPLE CODE FOR CALLING AN API USING JAVA**
-<br>
+
+<!-- !!! warn ""
+    From original code
+ -->
 
 ```java
-
 @Action
 public void OnTest()
 {
@@ -146,11 +146,11 @@ public void OnTest()
 }
 ```
 
-<br>
 
-### USING **EntityBuilder**
 
-<br>
+### Using **EntityBuilder** 
+
+
 
 ```java
 package hmacjava;
@@ -382,15 +382,15 @@ public class EntityBuilder {
 }
 ```
 
-<br>
+
 
 For a particular programming Language such as PHP, JavaScript, C# etc, Please send use a request to [it@nhif.or.tz](mailto:it@nhif.or.tz) and we will send you the sample code.
 
-<br>
+
 
 ### SUBMITTING DOCUMENTS:
 
-<br>
+
 
 The field in the Folio Object in the JSON Schema with a name `"PatientFile"` is supposed to contain the PDF Document that contain all details about the patient treatment for that particular folio. The document need to be submitted as Base 64 String. At the end, all the contents of the JSON document should be submitted as a single Complex object as given in sample document below.
 
@@ -573,11 +573,12 @@ can be posted on an NHIF API.
 
 ### CLAIMS RECONCILIATION
 
-<br>
+
 
 You can call the API below to retrieve list of claims that have been successful received by NHIF for reconciliation purpose
 
-<br>
 
-https://verification.nhif.or.tz/claimsServer/api/v1/claims/getSubmittedClaims?FacilityCode=06852&ClaimYear=2019&ClaimMonth=9
-
+```
+https://verification.nhif.or.tz/claimsServer/api/v1/claims/
+getSubmittedClaims?FacilityCode=06852&ClaimYear=2019&ClaimMonth=9
+```

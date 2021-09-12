@@ -1,6 +1,6 @@
 # 1.2) Downloading Latest NHIF Tariffs
 
-<br><br>
+
 
 The price package for each facility can be obtained using the API Call specifying the facility Code as shown below:
 
@@ -9,14 +9,14 @@ The price package for each facility can be obtained using the API Call specifyin
 
 A successful Calling of the url provided below will give a JSON Document that will have the price package for a specified Facility Code. In this result, the PackageID has a very great significance.
 
-<br>
+
 https://verification.nhif.or.tz/claimsserver/api/v1/Packages/GetPricePa
 ckage?FacilityCode=Your_Facility_Code
 
 
 Example https://verification.nhif.or.tz/claimsserver/api/v1/Packages/GetPricePackage?FacilityCode=
 
-<br>
+
 This will give the following result:
 
 
@@ -42,7 +42,7 @@ This will give the following result:
 ```
 
 
-<br><br>
+
 
 ### Description:
 
@@ -62,14 +62,14 @@ The information provided in the JSON Document contains the following important f
 
 To get NHIF price list with excluded service, please call the url provided below:
 
-<br>
+
 
 https://verification.nhif.or.tz/claimsserver/api/v1/Packages/GetPricePackageWithExcludedServices?FacilityCode=Your_Facility_Code
 
 Example: https://verification.nhif.or.tz/claimsserver/api/v1/Packages/GetPricePackageWithExcludedServices?FacilityCode=01099
 
 
-<br>
+
 This will give the following result:
 
 ```json
@@ -108,7 +108,7 @@ This will give the following result:
 }
 ```
 
-<br>
+
 
 ### **Description:**
 
@@ -126,7 +126,7 @@ The information provided in the JSON Document contains the following important f
 | IsRestricted | A flag showing whether the service has restriction or not. If a service has restriction the  beneficiary must get approval from NHIF before he/she can access that service. |Boolean|
 
 
-<br>
+
 **Excluded Services**
 
 
@@ -141,4 +141,8 @@ The information provided in the JSON Document contains the following important f
 **Note:**
 
 
-NHIF member authorized above is eligible to service enlisted only in the Price Package under his/her schemeID provided that this `schemeID` and `ProductCode` are not found in the list of Excluded Services for that particular service.
+
+
+
+!!! note
+    NHIF member authorized above is eligible to service enlisted only in the Price Package under his/her schemeID provided that this `schemeID` and `ProductCode` are not found in the list of Excluded Services for that particular service.
