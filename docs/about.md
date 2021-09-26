@@ -1,10 +1,8 @@
 # About
-: 
 
 !!! attention "Disclaimer"
-    **This is documentation not endorsed by the NHIF**. Much effort has been put into these documentation. This is not a complete documentation. This is a work in progress. Any feedback is welcome. Authors of this documentation are not liable for any damages caused by the use of this documentation.
-    If you have any questions, please contact the NHIF.
-
+**This is documentation not endorsed by the NHIF**. Much effort has been put into these documentation. This is not a complete documentation. This is a work in progress. Any feedback is welcome. Authors of this documentation are not liable for any and all damages caused by the use of this documentation.
+If you have any questions, please contact the NHIF.
 
 This is an attempt to re-write the official NHIF's API in a developer friendly way.
 
